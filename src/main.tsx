@@ -5,6 +5,15 @@ import CardContainer from "@/CardContainer.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <CardContainer />
+    <div className='flex flex-row gap-1 p-2 justify-center items-start'>
+      {Array.from({ length: 3 }, (_, i) => (
+        <CardContainer
+          teamname='test'
+          teamDescription='content'
+          content='this is body'
+          buttonText='confirm'
+        />
+      ))}
+    </div>
   </StrictMode>,
 )
