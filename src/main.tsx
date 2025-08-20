@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import CardContainer from "@/CardContainer.tsx";
+import CardContainer from "@/TeamCard";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div>
+    <div className='w-full w-[100vw] bg-black text-white text-3xl m-5'>
       Team List
     </div>
     <div className='flex flex-row gap-1 p-2 justify-center items-start'>
@@ -18,5 +18,5 @@ createRoot(document.getElementById('root')!).render(
         />
       ))}
     </div>
-  </StrictMode>,
+  </StrictMode>
 )
