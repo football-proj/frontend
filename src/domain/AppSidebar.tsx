@@ -1,13 +1,4 @@
-import {
-  Calendar,
-  Home,
-  Inbox,
-  Search,
-  Settings,
-  Users,
-  Trophy,
-  BarChart3,
-} from "lucide-react"
+import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
 
 import {
   Sidebar,
@@ -20,36 +11,31 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 
-// 메뉴 아이템들
+// Menu items.
 const items = [
   {
-    title: "홈",
-    url: "/",
+    title: "Home",
+    url: "#",
     icon: Home,
   },
   {
-    title: "팀",
-    url: "/teams",
-    icon: Users,
+    title: "Inbox",
+    url: "#",
+    icon: Inbox,
   },
   {
-    title: "경기",
-    url: "/matches",
-    icon: Trophy,
+    title: "Calendar",
+    url: "#",
+    icon: Calendar,
   },
   {
-    title: "통계",
-    url: "/stats",
-    icon: BarChart3,
-  },
-  {
-    title: "검색",
-    url: "/search",
+    title: "Search",
+    url: "#",
     icon: Search,
   },
   {
-    title: "설정",
-    url: "/settings",
+    title: "Settings",
+    url: "#",
     icon: Settings,
   },
 ]
@@ -59,7 +45,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Football App</SidebarGroupLabel>
+          <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
