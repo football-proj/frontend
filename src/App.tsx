@@ -1,5 +1,6 @@
-import { SidebarInset, SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
-import { AppSidebar } from "./domain/AppSidebar";
+import {SidebarInset, SidebarProvider, SidebarTrigger} from "./components/ui/sidebar";
+import {AppSidebar} from "./domain/AppSidebar";
+import TeamContainer from "@/domain/team/TeamContainer.tsx";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           </header>
           <main className="flex-1 overflow-auto p-4">
             <div>
-              <p>test</p>
+                <TeamContainer />
             </div>
           </main>
         </SidebarInset>
