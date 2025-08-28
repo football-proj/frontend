@@ -1,0 +1,25 @@
+const mockTeams = [
+    { id: 1, name: "Real Madrid", emblem: "real_madrid.jpg", description: "스페인의 명문 구단", country: "Spain" },
+    { id: 2, name: "Barcelona", emblem: "barcelona.jpg", description: "카탈루냐의 자존심", country: "Spain" },
+    { id: 3, name: "Manchester United", emblem: "man_united.jpg", description: "잉글랜드 프리미어리그의 전설", country: "England" },
+    { id: 4, name: "Liverpool", emblem: "liverpool.jpg", description: "You'll Never Walk Alone", country: "England" },
+    { id: 5, name: "Bayern Munich", emblem: "bayern.jpg", description: "독일 분데스리가의 왕자", country: "Germany" },
+    { id: 6, name: "PSG", emblem: "psg.jpg", description: "파리의 별들", country: "France" },
+    { id: 7, name: "Juventus", emblem: "juventus.jpg", description: "이탈리아의 노부인", country: "Italy" },
+    { id: 8, name: "Chelsea", emblem: "chelsea.jpg", description: "런던의 블루스", country: "England" },
+    { id: 9, name: "Manchester City", emblem: "man_city.jpg", description: "시티즌들의 꿈", country: "England" },
+    { id: 10, name: "Arsenal", emblem: "arsenal.jpg", description: "런던 북부의 건너들", country: "England" },
+    { id: 11, name: "Atletico Madrid", emblem: "atletico.jpg", description: "마드리드의 투사들", country: "Spain" },
+    { id: 12, name: "Inter Milan", emblem: "inter.jpg", description: "밀라노의 검은 뱀", country: "Italy" },
+    { id: 13, name: "AC Milan", emblem: "ac_milan.jpg", description: "로소네리의 전설", country: "Italy" },
+    { id: 14, name: "Borussia Dortmund", emblem: "dortmund.jpg", description: "노란 벽의 함성", country: "Germany" },
+    { id: 15, name: "Tottenham", emblem: "tottenham.jpg", description: "런던의 백합", country: "England" },
+    { id: 16, name: "AS Roma", emblem: "roma.jpg", description: "영원한 도시의 늑대", country: "Italy" },
+    { id: 17, name: "Sevilla", emblem: "sevilla.jpg", description: "안달루시아의 자존심", country: "Spain" },
+    { id: 18, name: "Napoli", emblem: "napoli.jpg", description: "남부 이탈리아의 희망", country: "Italy" },
+    { id: 19, name: "Leicester City", emblem: "leicester.jpg", description: "기적을 만든 여우들", country: "England" },
+    { id: 20, name: "West Ham", emblem: "west_ham.jpg", description: "런던 동부의 해머스", country: "England" },
+    { id: 21, name: "Valencia", emblem: "valencia.jpg", description: "지중해의 박쥐들", country: "Spain" },
+];
+
+export default mockTeams

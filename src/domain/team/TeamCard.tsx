@@ -3,26 +3,29 @@ import {
     CardAction,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle
 } from "@/components/ui/card.tsx";
 
-const TeamCard = () => {
+interface TeamCardProps {
+    name: string;
+    description: string;
+    country: string;
+    emblem: string;
+}
+
+const TeamCard = ({ name, description, country, emblem }: TeamCardProps) => {
     return (
         <>
             <Card>
                 <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                    <CardAction>Card Action</CardAction>
+                    <CardTitle>{name}</CardTitle>
+                    <CardDescription>{description}</CardDescription>
+                    <CardAction>{country}</CardAction>
                 </CardHeader>
                 <CardContent>
-                    <p>Card Content</p>
+                    <img src={emblem} />
                 </CardContent>
-                <CardFooter>
-                    <p>Card Footer</p>
-                </CardFooter>
             </Card>
         </>
     )
