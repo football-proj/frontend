@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/pagination.tsx";
 import mockTeams from "@/mock_data.ts";
 import usePagination from "@/hooks/UsePagination.ts";
+import {Button} from "@/components/ui/button.tsx";
 
 const TeamContainer = () => {
     const {
@@ -24,6 +25,7 @@ const TeamContainer = () => {
         <div className="flex flex-col flex-1 overflow-auto p-4">
             <div className="text-right text-sm text-gray-600 mb-4">
                 Total : {mockTeams.length} 팀
+                <Button>팀 추가</Button>
             </div>
 
             {/* 카드 리스트 */}

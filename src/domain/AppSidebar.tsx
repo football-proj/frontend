@@ -10,6 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import {ModeToggle} from "@/components/mode-toggle.tsx";
 
 // Menu items.
 const items = [
@@ -45,7 +46,9 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Football-Strategy Master</SidebarGroupLabel>
+          <SidebarGroupLabel>
+              Football-Strategy Master
+          </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
@@ -61,6 +64,9 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+          <SidebarGroupContent>
+              <ModeToggle/>
+          </SidebarGroupContent>
       </SidebarContent>
     </Sidebar>
   )
